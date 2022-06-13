@@ -1,0 +1,136 @@
+html {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: "Lobster", cursive;
+}
+
+#droite {
+  float: right;
+  width: 40%;
+  position: fixed;
+  margin-left: 60%;
+}
+
+.map {
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin: 20px auto;
+}
+
+.map__image {
+  position: absolute;
+  top: 20px;
+  left: 65%;
+}
+
+.map__image svg {
+  width: 700px;
+  height: 100%;
+}
+
+.map__image path {
+  fill: #e7921a;
+  stroke: #FFFFFF;
+  stroke-width: 3px;
+  transition: fill 0.3s;
+}
+
+.map__image .region1 path {
+  fill: #b8edff;
+}
+
+.map__image .region2 path {
+  fill: #ffdeb8;
+}
+
+.map__image .region3 path {
+  fill: #e2b8ff;
+}
+
+.map__image .region4 path {
+  fill: #ffc5b8;
+}
+
+.map__image .region5 path {
+  fill: #b8ffba;
+}
+
+.map__image .region6 path {
+  fill: #ffb8b8;
+}
+
+.map__image .is-active path {
+  fill: rgba(158, 28, 57, 0.7);
+}
+
+.map__image .actif path {
+  fill: #9e1c39;
+}
+
+.map__list {
+  margin-left: 6%;
+  float: left;
+  width: 60%;
+}
+
+.map__list li {
+  margin: 10px;
+  padding: 0;
+  list-style: none;
+  width: 80px;
+}
+
+.map__list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.map__list a {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  display: inline-block;
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.map__list a.actif {
+  background-color: #9e1c39;
+  color: #f4f4f4;
+  transition: all 1s;
+}
+.map__list a.is-active {
+  background-color: rgba(158, 28, 57, 0.7);
+  color: #f4f4f4;
+  transition: all 1s;
+}
+
+@media screen and (max-width: 720px) {
+  .map__list {
+    float: none;
+    width: 100%;
+  }
+
+  .map__image {
+    padding: 10px;
+    position: static;
+    width: 100%;
+  }
+
+  .map__image svg {
+    width: 100%;
+    height: 370px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
